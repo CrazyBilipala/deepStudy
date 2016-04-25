@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	var abstractFatory = function () {
+	};
+    abstractFatory.protoType = {
+    	createFactory : function(){
+    		throw new Error("我是抽象函数，不负责操作");
+    	}
+    }
+    var realFactory = function(){
+    	//有没有，作用不大，主要是完全复制abstractFatory的所有属性和方法
+    	abstractFatory.call(this);
+    }
+    realFactory.prototype = new abstractFatory();
+    realFactory.prototype.constructor = realFactory;
+    realFactory.prototype.createFactory = function(){
+    	return "这是现实工厂生产";
+    }
+    var factory = new realFactory();
+
+    console.log(factory.createFactory());
+</script>

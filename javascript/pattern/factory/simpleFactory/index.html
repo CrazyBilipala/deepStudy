@@ -1,0 +1,24 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+    //定义工厂对象
+	var factory ={};
+	//工厂方法放在工厂对象里
+	factory.cloth = function () {
+		return "我们生产衣服";
+	}
+	factory.shoe = function () {
+		return "我们生产鞋子";
+	}
+	factory.translate = function () {
+		return "我们负责运输";
+	}
+	//为工厂分配老板，也就是外部连接接口
+	factory.boss = function (param) {
+		var result = factory[param]();
+		return result;
+	}
+
+	//实际调用
+	var me = factory.boss("cloth");
+	console.log(me);
+</script>
