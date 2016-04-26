@@ -91,6 +91,19 @@
 # 持有对象
 ## javase5以后的泛型
 ## List
-+ > ArrayList 擅长随机访问，插入和删除较慢
-+ > LinkedList 擅长插入和删除，随机访问较慢
-## 迭代器 Iterator 
+> + ArrayList 擅长随机访问，插入和删除较慢
+> + LinkedList 擅长插入和删除，随机访问较慢
+## 迭代器 Iterator
+## LinkedList
+## Stack
+## Set
+> + HashSet无排序  TreeSet有排序
+## Map 
+> +  HashMap
+## Quene
+> + PriorityQuene 保证队列的行为
+## foreach
+# 通过异常处理错误
+> + try catch finally块
+> + extends Exception 创建自己的异常类
+
