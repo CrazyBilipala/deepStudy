@@ -106,4 +106,20 @@
 # 通过异常处理错误
 > + try catch finally块
 > + extends Exception 创建自己的异常类
-
+# 字符串
+## 不可变String
+> +　不管什么操作，String都是使用一个新的对象来实现的，原来的值没有改变
+## StringBuffer StringBuilder
+> + 复杂的字符拼接中，选择使用这些api，速度更快
+## 格式化输出
+> + printf()
+> + format()
+> + java.util.Formatter
+## 正则表达式
+> + Pattern Matcher
+## 分词
+> + 正则表达式 Scanner
+> +　StringTokenizer
+# 类型信息
+## Class
+## 泛型
